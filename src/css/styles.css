@@ -71,7 +71,7 @@ a {
     text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Yeseva One", cursive;
+  font-family: "Back-to-Black";
   margin: 0; }
 
 h1, .fs-1 {
@@ -1608,7 +1608,7 @@ html input[disabled] {
   padding-bottom: 70px; }
 
 .banner {
-  background: url(../img/hero-bg.jpg) 0 0 no-repeat;
+  background: url(../img/background.jpg) 0 0 no-repeat;
   background-size: cover;
   text-align: center; }
   @media only screen and (min-width: 740px) {
@@ -1618,12 +1618,14 @@ html input[disabled] {
 @media only screen and (min-width: 740px) {
   .banner-inner {
     width: 75%;
+    height: 100%;
     margin: 0 auto;
     padding-top: 45px; } }
 
 @media only screen and (min-width: 980px) {
   .banner-inner {
     width: 100%;
+    height: 100%;
     padding-top: 60px; } }
 
 .banner-lead {
