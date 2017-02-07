@@ -1,4 +1,8 @@
 // Website Variables and Colors
+@font-face {
+  font-family: "Back-to-Black";
+  src: font-files("../Back-to-Black.ttf");
+}
 $base-font-family: "Open Sans", sans-serif;
 $base-font-size: 16;
 $base-line-height: 28;
@@ -7,7 +11,7 @@ $base-font-color: #494d4e;
 $base-link-color: #c90;
 
 // Headings
-$base-heading-font-family: "Yeseva One", cursive;
+$base-heading-font-family: "Back-to-Black", cursive;
 $base-h1-font-size: 48;
 $base-h1-line-height: 64;
 $base-h1-font-weight: 400;
