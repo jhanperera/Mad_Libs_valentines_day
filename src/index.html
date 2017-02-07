@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MadLibs LOVE Edition</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MadLibs LOVE Edition</title>
 
-  <meta name="description" content="">
-  <meta name="theme-color" content="#444444">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-  <link rel="stylesheet" href="css/styles.css">
+    <!--Meta data-->
+    <meta name="description" content="">
+    <meta name="theme-color" content="#444444">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icons-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Scripts-->
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/wow.js"></script>
+    <script src="js/vendor/webfontloader.js"></script>
+    <script src="js/default.js"></script>
 </head>
+
 <body>
 
-<!-- Music
+    <!-- Music
   <div style="position:absolute;top:-500px;left:-5px">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5OoxVXT4uY4?loop=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
   </div>
 -->
-<div class="banner">
+    <div class="banner">
+        <!--Landing page-->
+        <div class="banner-inner container" id="landingBanner">
+            <h1 class="banner-lead">
+              <span class="banner-lead-1" style="font-size: 50%; padding-top: 50px; font-family: 'Open Sans', sans-serif; display: block">Mad Libs</span><br />
+              <span class="banner-lead-2" style="font-size: 300%; display: block">Love</span><br />
+              <span class="banner-lead-2" style="padding-bottom: 25px; display: block">Edition</span>
+            </h1>
 
-  <div class="banner-inner container">
-    <h1 class="banner-lead">
-      <span class="banner-lead-1" style="font-size: 50%; font-family: 'Open Sans', sans-serif; display: block">Mad Libs</span>
-      <span class="banner-lead-2" style="font-size: 300%; padding-top: 50PX;">Love</span>
-      <span class="banner-lead-2" style="font-size: 200%; padding-top: 80px">Edition</span>
-    </h1>
-    <div class="banner-buttons">
-      <a href="#reservations" class="button button-primary">I'm ready. Lets begin!</a>
+            <div class="banner-buttons">
+                <a class="button button-primary" id="startBTN">I'm ready. Lets begin!</a>
+            </div>
+        </div>
+
+        <!--Select Category-->
+        <div class="banner-inner container" id="categoryBanner" style="display: none;">
+            <h1 class="banner-lead">
+              <span class="banner-lead-1" style="font-size: 50%; padding-top: 50px; font-family: 'Open Sans', sans-serif; display: block">Mad Libs</span><br />
+              <span class="banner-lead-2" style="font-size: 300%; display: block">Love</span><br />
+              <span class="banner-lead-2" style="padding-bottom: 25px; display: block">Edition</span>
+            </h1>
+
+        </div>
     </div>
-  </div>
-</div>
-
-
-<script src="js/vendor/wow.js"></script>
-<script src="js/vendor/webfontloader.js"></script>
-<script src="js/default.js"></script>
 
 </body>
+
 </html>

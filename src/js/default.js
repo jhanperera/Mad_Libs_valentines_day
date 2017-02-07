@@ -17,3 +17,12 @@ WebFont.load({
     families: ['Open Sans:400,700', 'Yeseva One:400']
   }
 });
+
+//Custom JS goes here!
+
+$(document).ready(function(){
+    $("#startBTN").click(function(){
+        $("#landingBanner").hide(1000);
+        $("#categoryBanner").show(1000);
+    });
+});
