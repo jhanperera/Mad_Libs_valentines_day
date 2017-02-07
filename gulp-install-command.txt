@@ -1,0 +1,1 @@
+npm install gulp gulp-watch gulp-sass gulp-sourcemaps gulp-css-base64 path gulp-notify gulp-inline-source browser-sync gulp-imagemin del gulp-cache gulp-uglify gulp-autoprefixer run-sequence --save-dev
