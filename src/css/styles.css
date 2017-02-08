@@ -1608,8 +1608,19 @@ html input[disabled] {
   padding-bottom: 70px; }
 
 .banner {
-  background: url(../img/background.jpg) 0 0 no-repeat;
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+
   text-align: center; }
   @media only screen and (min-width: 740px) {
     .banner {
@@ -3174,5 +3185,9 @@ html input[disabled] {
     padding: 55px; }
   .pad-60-print {
     padding: 60px; } }
+
+.category-button{
+  padding: 2em 3em !important;
+}
 
 /*# sourceMappingURL=styles.css.map */
