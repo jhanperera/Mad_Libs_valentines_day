@@ -19,10 +19,26 @@ WebFont.load({
 });
 
 //Custom JS goes here!
-
+//Wire up all the button to show and hide divs
 $(document).ready(function(){
     $("#startBTN").click(function(){
         $("#landingBanner").hide(1000);
+        $("#categoryBanner").show(1000);
+    });
+    $("#classicBTN").click(function(){
+        $("#categoryBanner").hide(1000);
+        $("#categoryBanner").show(1000);
+    });
+    $("#eroticaBTN").click(function(){
+        $("#categoryBanner").hide(1000);
+        $("#categoryBanner").show(1000);
+    });
+    $("#highschoolBTN").click(function(){
+        $("#categoryBanner").hide(1000);
+        $("#categoryBanner").show(1000);
+    });
+    $("#romanticBTN").click(function(){
+        $("#categoryBanner").hide(1000);
         $("#categoryBanner").show(1000);
     });
 });
