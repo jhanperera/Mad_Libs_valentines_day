@@ -1676,7 +1676,9 @@ html input[disabled] {
 
 .banner-lead-1 {
   -webkit-animation-delay: .4s;
-          animation-delay: .4s; }
+          animation-delay: .4s;
+        padding-top: 50px;
+        display: block }
 
 .banner-lead-2 {
   -webkit-animation-delay: .8s;

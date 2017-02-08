@@ -22,23 +22,23 @@ WebFont.load({
 //Wire up all the button to show and hide divs
 $(document).ready(function(){
     $("#startBTN").click(function(){
-        $("#landingBanner").hide(1000);
-        $("#categoryBanner").show(1000);
+        $("#landingBanner").hide(500);
+        $("#categoryBanner").show(500);
     });
     $("#classicBTN").click(function(){
-        $("#categoryBanner").hide(1000);
-        $("#categoryBanner").show(1000);
+        $("#categoryBanner").hide(500);
+        $("#classicBanner").show(500);
     });
     $("#eroticaBTN").click(function(){
-        $("#categoryBanner").hide(1000);
-        $("#categoryBanner").show(1000);
+        $("#categoryBanner").hide(500);
+        $("#eroticaBanner").show(500);
     });
     $("#highschoolBTN").click(function(){
-        $("#categoryBanner").hide(1000);
-        $("#categoryBanner").show(1000);
+        $("#categoryBanner").hide(500);
+        $("#highschoolBanner").show(500);
     });
     $("#romanticBTN").click(function(){
-        $("#categoryBanner").hide(1000);
-        $("#categoryBanner").show(1000);
+        $("#categoryBanner").hide(500);
+        $("#romanticBanner").show(500);
     });
 });
