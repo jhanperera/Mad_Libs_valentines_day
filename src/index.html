@@ -17,11 +17,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/styles.css">
-    <!--Scripts-->
-    <script src="js/vendor/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/wow.js"></script>
-    <script src="js/vendor/webfontloader.js"></script>
-    <script src="js/default.js"></script>
 </head>
 
 <body>
@@ -65,7 +60,7 @@
             </h1>
 
             <div class="container">
-                <form>
+                <form id="classicRomForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -98,7 +93,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -114,7 +109,7 @@
             </h1>
 
             <div class="container">
-                <form>
+                <form id="eroticaForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -147,7 +142,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -163,7 +158,7 @@
             </h1>
 
             <div class="container">
-                <form>
+                <form id="hsForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -196,7 +191,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -212,7 +207,7 @@
             </h1>
 
             <div class="container">
-                <form>
+                <form id="romanticForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -245,7 +240,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -253,8 +248,29 @@
                 </form>
             </div>
         </div>
+
+        <div class="banner-inner container" id="resultsBanner" style="display: none;">
+            <h1 class="banner-lead" style="margin-bottom: 0px;">
+              <span class="banner-lead-1">Your Madlibs Results:</span>
+            </h1>
+
+
+            <div class="container">
+            </div>
+
+            <div class="banner-buttons">
+                <a class="button button-primary" id="homeBTN">Home</a>
+            </div>
+        </div>
+
     </div>
 
 </body>
+
+<!--Scripts-->
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<script src="js/vendor/wow.js"></script>
+<script src="js/vendor/webfontloader.js"></script>
+<script src="js/default.js"></script>
 
 </html>
