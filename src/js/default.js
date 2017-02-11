@@ -64,8 +64,43 @@ $( "#eroticaForm" ).submit(function( event ) {
 
 $( "#hsForm" ).submit(function( event ) {
   //We have to do input validation here
-  $("#highschoolBanner").hide(500);
-  $("#resultsBanner").show(500);
+  var values = [];
+  var emptyCheck = false;
+  //For each input that is text we check if its empty
+  $('#hsForm input[type=text]').each(function() {
+    //Trim and check if the value is empty
+    if($.trim($(this).val()) == ''){
+      emptyCheck = true;
+      $(this).addClass("error");
+    }else{
+      //else we push it into the array
+      emptyCheck = false;
+      $(this).removeClass("error");
+      values.push($(this).val());
+  }});
+
+  //If we are all good we go in here
+  if(emptyCheck == false){
+    $("#highschoolBanner").hide(500);
+    $("#resultsBanner").show(500);
+    //add the story to the resultsPara
+    $("#resultsPara").append("Today was the day, <mark>" + values[0] +
+    "</mark> built up the courage to finally ask out <mark>" + values[1] +
+    "</mark> on a date. It was all planned out, first they would <mark>" + values[2] +
+    "</mark> over to the roller rink to spend a few hours <mark>" + values[3] +
+    "</mark>. Then watch <mark> " + values[4] +
+    "</mark> at the local theater while eating <mark>" + values[5] +
+    "</mark>. Finally, at the end of the night <mark>" + values[0] +
+    "</mark>. would take  <mark>" + values[1] +
+    "</mark> home where he would offer <mark>" + values[6] +
+    "</mark> as a thank you and leaned in for a  <mark>" + values[7] +
+    "</mark> on the <mark>" + values[8] + "</mark>.")
+  }
+  else{
+    //Empty fields were detected inform the user
+    alert("Oh no, look like one or more fields are empty.")
+  }
+  //Stops the submit button from reloading the page
   event.preventDefault();
 });
 
