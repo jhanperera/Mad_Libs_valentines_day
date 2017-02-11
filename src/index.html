@@ -17,11 +17,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     <!--Stylesheets-->
     <link rel="stylesheet" href="css/styles.css">
-    <!--Scripts-->
-    <script src="js/vendor/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/wow.js"></script>
-    <script src="js/vendor/webfontloader.js"></script>
-    <script src="js/default.js"></script>
 </head>
 
 <body>
@@ -48,7 +43,7 @@
         <!--Select Category-->
         <div class="banner-inner container" id="categoryBanner" style="display: none;">
             <h1 class="banner-lead">
-              <span class="banner-lead-1">Select a Category:</span>
+              <span class="banner-lead-1 pad-top-10">Select a Category:</span>
             </h1>
             <div class="banner-buttons">
                 <a class="button button-primary category-button" id="classicBTN">Classical Romance</a>
@@ -61,11 +56,11 @@
         <!--Classical Romance-->
         <div class="banner-inner container" id="classicBanner" style="display: none;">
             <h1 class="banner-lead" style="margin-bottom: 0px;">
-              <span class="banner-lead-1">Classical Romance</span>
+              <span class="banner-lead-1 pad-top-10">Classical Romance</span>
             </h1>
 
             <div class="container">
-                <form>
+                <form id="classicRomForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -98,7 +93,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -110,11 +105,11 @@
         <!--Erotica-->
         <div class="banner-inner container" id="eroticaBanner" style="display: none;">
             <h1 class="banner-lead" style="margin-bottom: 0px;">
-              <span class="banner-lead-1">Erotica</span>
+              <span class="banner-lead-1 pad-top-10">Erotica</span>
             </h1>
 
             <div class="container">
-                <form>
+                <form id="eroticaForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -147,7 +142,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -159,11 +154,11 @@
         <!--High School Sweethearts-->
         <div class="banner-inner container" id="highschoolBanner" style="display: none;">
             <h1 class="banner-lead" style="margin-bottom: 0px;">
-              <span class="banner-lead-1">High School Sweethearts</span>
+              <span class="banner-lead-1 pad-top-10">High School Sweethearts</span>
             </h1>
 
             <div class="container">
-                <form>
+                <form id="hsForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -196,7 +191,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -208,11 +203,11 @@
         <!--Romantic Comedy-->
         <div class="banner-inner container" id="romanticBanner" style="display: none;">
             <h1 class="banner-lead" style="margin-bottom: 0px;">
-              <span class="banner-lead-1">Romantic Comedy</span>
+              <span class="banner-lead-1 pad-top-10">Romantic Comedy</span>
             </h1>
 
             <div class="container">
-                <form>
+                <form id="romanticForm">
                     <div class="clear">
                         <div class="col-4-m pad-bottom-10"></div>
                         <div class="col-4-m pad-top-10 pad-bottom-10">
@@ -245,7 +240,7 @@
                                 <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
                             </div>
                             <div class="pad-top-10 pad-bottom-10">
-                                <button type="submit" class="button button-primary" value="Submit">Lets Go!</button>
+                                <input type="submit" class="button button-primary" value="Submit"></input>
                             </div>
                         </div>
                         <div class="col-4-m pad-bottom-10"></div>
@@ -253,8 +248,34 @@
                 </form>
             </div>
         </div>
+
+        <div class="banner-inner container" id="resultsBanner" style="display: none;">
+            <h1 class="banner-lead" style="margin-bottom: 0px;">
+              <span class="banner-lead-1 pad-top-10">Your Madlibs Results:</span>
+            </h1>
+
+
+            <div class="container">
+              <div id="results" class="text pad-10">
+                <p class="pad-5">
+                  Lorem ipsum dolor sit amet, <mark>milk</mark> consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                </p>
+              </div>
+            </div>
+
+            <div class="banner-buttons">
+                <a class="button button-primary" style="margin: 10px 4px" id="homeBTN">Home</a>
+            </div>
+        </div>
+
     </div>
 
 </body>
+
+<!--Scripts-->
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<script src="js/vendor/wow.js"></script>
+<script src="js/vendor/webfontloader.js"></script>
+<script src="js/default.js"></script>
 
 </html>

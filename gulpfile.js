@@ -1,7 +1,7 @@
 // Base Gulp File
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    sass = require('gulp-sass'),
+	cleanCSS = require('gulp-clean-css')
     sourcemaps = require('gulp-sourcemaps'),
     cssBase64 = require('gulp-css-base64'),
     path = require('path'),
@@ -15,28 +15,18 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     runSequence = require('run-sequence');
 
-// Task to compile SCSS
-gulp.task('sass', function () {
-  return gulp.src('./src/scss/styles.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      errLogToConsole: false,
-      paths: [ path.join(__dirname, 'scss', 'includes') ]
-    })
-    .on("error", notify.onError(function(error) {
-      return "Failed to Compile SCSS: " + error.message;
-    })))
-    .pipe(cssBase64())
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./src/css/'))
-    .pipe(gulp.dest('./dist/css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-    .pipe(notify("SCSS Compiled Successfully :)"));
+// Task to compile CSS
+gulp.task('minify-css', function () {
+	return gulp.src('./src/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('./dist/css/'));  
 });
 
+// Task for fonts
+gulp.task('font', function(){
+	return gulp.src('./src/font/*')
+	.pipe(gulp.dest('./dist/font/')); 
+});
 // Task to Minify JS
 gulp.task('jsmin', function() {
   return gulp.src('./src/js/**/*.js')
@@ -75,7 +65,6 @@ gulp.task('inlinesource', function () {
 
 // Gulp Watch Task
 gulp.task('watch', ['browserSync'], function () {
-   gulp.watch('./src/scss/**/*', ['sass']);
    gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
@@ -89,5 +78,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', function() {
-  runSequence('clean', 'sass', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('clean', 'minify-css', 'font', 'imagemin', 'jsmin', 'inlinesource');
 });

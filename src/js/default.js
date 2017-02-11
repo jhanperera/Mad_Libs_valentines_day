@@ -41,4 +41,37 @@ $(document).ready(function(){
         $("#categoryBanner").hide(500);
         $("#romanticBanner").show(500);
     });
+    $("#homeBTN").click(function(){
+        $("#resultsBanner").hide(500);
+        $("#categoryBanner").show(500);
+    });
+});
+
+//When the submit buttons are clicked
+$( "#classicRomForm" ).submit(function( event ) {
+  //We have to do input validation here
+  $("#classicBanner").hide(500);
+  $("#resultsBanner").show(500);
+  event.preventDefault();
+});
+
+$( "#eroticaForm" ).submit(function( event ) {
+  //We have to do input validation here
+  $("#eroticaBanner").hide(500);
+  $("#resultsBanner").show(500);
+  event.preventDefault();
+});
+
+$( "#hsForm" ).submit(function( event ) {
+  //We have to do input validation here
+  $("#highschoolBanner").hide(500);
+  $("#resultsBanner").show(500);
+  event.preventDefault();
+});
+
+$( "#romanticForm" ).submit(function( event ) {
+  //We have to do input validation here
+  $("#romanticBanner").hide(500);
+  $("#resultsBanner").show(500);
+  event.preventDefault();
 });
