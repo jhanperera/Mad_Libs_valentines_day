@@ -58,7 +58,8 @@ body {
   background: #fff; }
 
 p {
-  margin: 0 0 20px 0; }
+  color: #fff;
+  font-weight: 900;}
 
 a {
   color: #fff;
@@ -3139,6 +3140,10 @@ html input[disabled] {
 .category-button{
   padding: 2em 3em !important;
   margin-bottom: 2em !important;
+}
+
+.text{
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /*# sourceMappingURL=styles.css.map */
