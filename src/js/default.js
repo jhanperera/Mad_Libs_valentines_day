@@ -44,6 +44,7 @@ $(document).ready(function(){
     $("#homeBTN").click(function(){
         $("#resultsBanner").hide(500);
         $("#categoryBanner").show(500);
+        $("#resultsPara").empty();
     });
 });
 
@@ -70,13 +71,16 @@ $( "#classicRomForm" ).submit(function( event ) {
     $("#classicBanner").hide(500);
     $("#resultsBanner").show(500);
     //add the story to the resultsPara
-    $("#resultsPara").append("Ashamed of his ugly(adjective) penis(body part), the beast concealed himself
-              inside his castle, with a road(noun) as his only window to the outside world. The
-              girl(noun) she had offered was truly an enchanted girl(same noun), which would
-              bloom until his 35th(ordinal number - 1st 2nd etc) year. If he could learn to
-              suck(verb) another, and earn her car(noun) in return by the time the last
-              spoon(object) fell, then the spell would be broken. If not, he would be doomed to
-              remain a dog(animal) for all time.<mark>" + values[8] + "</mark>.")
+    $("#resultsPara").append("Ashamed of his <mark>" + values[0] + "</mark> <mark>" + values[1]
+              +"</mark>, the beast concealed himself inside his castle, with a <mark>" + values[2]
+              +"</mark> as his only window to the outside world. The <mark>" + values[3]
+              +"</mark> she had offered was truly an enchanted <mark>" + values[3]
+              +"</mark>, which would bloom until his <mark>" + values[4]
+              +"</mark> year. If he could learn to <mark>" + values[5]
+              +"</mark> another, and earn her <mark>"+ values[6]
+              +"</mark> in return by the time the last <mark>" + values[7]
+              +"</mark> fell, then the spell would be broken. If not, he would be doomed to remain a <mark>" +  values [8]
+              +"</mark> for all time.")
   }
   else{
     //Empty fields were detected inform the user
@@ -108,11 +112,13 @@ $( "#eroticaForm" ).submit(function( event ) {
     $("#eroticaBanner").hide(500);
     $("#resultsBanner").show(500);
     //add the story to the resultsPara
-    $("#resultsPara").append("Show me how you slap(action word) yourself. Keep still. Weʼre going to have to
-            work on keeping you still, diana(name) … Letʼs see if we can make you fart(action
-            word) like this … Youʼre so beautifully(adverb) beautiful(adjective). God, I want you
-            … Iʼm going to jump(action word) you now, Miss Steele … Hard ... run(Action word)
-            for me, jhan(name).<mark>" + values[8] + "</mark>.")
+    $("#resultsPara").append("Show me how you <mark>" + values[0]
+            +"</mark> yourself. Keep still. Weʼre going to have to work on keeping you still, <mark>" + values[1]
+            +"</mark>… Letʼs see if we can make you <mark>" + values[2]
+            +"</mark> like this … Youʼre so <mark>" + values[3] + "</mark> <mark>" + values[4]
+            +"</mark> God, I want you Iʼm going to <mark>" + values[5]
+            +"</mark> you now, Miss Steele … Hard ... <mark>" + values[6]
+            +"</mark> for me, <mark>" +  values[7] +"</mark>");
   }
   else{
     //Empty fields were detected inform the user
@@ -144,23 +150,24 @@ $( "#hsForm" ).submit(function( event ) {
     $("#highschoolBanner").hide(500);
     $("#resultsBanner").show(500);
     //add the story to the resultsPara
-    $("#resultsPara").append("One upon a time there was a __Noue(1)__
-    living all alone in the middle of ___Place(1)___, __Noue(1)__
-    sat on his __Furniture__
-    watching all the couples play and wishing that he had someone too. from his __Place(1)__
-    came this idea that he would __Verb(Present tense)(1)___
-    year and year. <br />
-    Years of _Verb(ending in ing) all alone turned his heart into __hard object___.
-    While little did he know that living in the ___Place(1)___,
-    below Another  __Noue(2)__
-    was listening to his __Verb(Present tense)(1)___
-    Because she believed a __Noue(1)__ __Body part___
-    was meant for ___Noun(2)__
-    Now __Noune(2)___
-    was so ready to meet __Noune(2)
-    above the __Place(1)
-    As he __Verb___
-    of hope for finding Love. <mark>" + values[8] + "</mark>.");
+    $("#resultsPara").append("One upon a time there was a <mark>" + values[0]
+                +"</mark> living all alone in the middle of <mark>" + values[1] + "</mark>, <mark>" + values[0]
+                +"</mark> sat on his <mark>" + values[2]
+                +"</mark> watching all the couples play and wishing that he had someone too. from his <mark>" + values[1]
+                +"</mark> came this idea that he would <mark>" + values[3]
+                +"</mark> year and year."
+                + "Years of <mark>" + values[4]
+                +"</mark> all alone turned his heart into <mark>" + values[5]
+                +"</mark> While little did he know that living in the <mark>" + values[1]
+                +"</mark> below Another  <mark>" + values[6]
+                +"</mark> was listening to his <mark>" + values[3]
+                +"</mark> Because she believed a <mark>" + values[0] + "</mark> <mark>" + values[7]
+                +"</mark> was meant for <mark>" + values[6]
+                +"</mark> Now <mark>" + values[6]
+                +"</mark> was so ready to meet <mark>" + values[6]
+                +"</mark> above the <mark>" + values[1]
+                +"</mark> As he <mark>" + values[8]
+                +"</mark> of hope for finding Love.");
   }
   else{
     //Empty fields were detected inform the user
@@ -192,12 +199,15 @@ $( "#romanticForm" ).submit(function( event ) {
     $("#romanticBanner").hide(500);
     $("#resultsBanner").show(500);
     //add the story to the resultsPara
-    $("#resultsPara").append("Being a woman is worse than being a cleaner(occupation) there is so much farting
-        (ACTION VERB ENDS WITH ING) and lightbulb(noun) running(action verb ends
-        with ing) to be done: elbow(body part) to be talked(passive tense), bums(body
-        part) shaved, a foot(body part) plucked, left arm (body part) pumiced, a little
-        toe(body part) exfoliated and moisturised, spots cleansed, roots dyed, eyelashes
-        tinted, nails filed, cellulite massaged, stomach muscles exercised.");
+    $("#resultsPara").append("Being a woman is worse than being a <mark>" + values[0]
+        +"</mark> there is so much <mark>" + values[1]
+        +"</mark> and <mark>" + values[2] + "</mark> <mark>" + values[3]
+        +"</mark> to be done: <mark>" + values[4]
+        +"</mark> to be <mark>" + values[5] + "</mark> <mark>" + values[6]
+        +"</mark> shaved, a <mark>" + values[7]
+        +"</mark> plucked, left <mark>" + values[8]
+        +"</mark> pumiced, a little <mark>" + values[9]
+        +"</mark> exfoliated and moisturised, spots cleansed, roots dyed, eyelashes tinted, nails filed, cellulite massaged, stomach muscles exercised.");
   }
   else{
     //Empty fields were detected inform the user
