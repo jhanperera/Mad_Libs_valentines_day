@@ -162,8 +162,10 @@ small, .small {
   line-height: 1rem; }
 
 mark, .mark {
-  background-color: #ff0;
-  color: #000; }
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  text-transform: capitalize;}
 
 sub, .sub, sup, .sup {
   font-size: 75%;
